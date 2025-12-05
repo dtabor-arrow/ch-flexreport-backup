@@ -66,7 +66,7 @@ for dataset in datasets:
 report_data_list.sort(key=lambda x: x['name'].lower())
 
 # Write the sorted report data to the CSV file
-with open('backup-list.csv', 'w', newline='') as csv_file:
+with open('report-list.csv', 'w', newline='') as csv_file:
     fieldnames = ["name", "id", "createdBy", "dataset_name"]
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 #    writer.writeheader()
@@ -74,4 +74,4 @@ with open('backup-list.csv', 'w', newline='') as csv_file:
     for report_data in report_data_list:
         writer.writerow(report_data)
 
-print("Getting all saved FlexReports for all datasets, saving them to backup-list.csv")
+print("Getting all saved FlexReports for all datasets, saving them to report-list.csv")
