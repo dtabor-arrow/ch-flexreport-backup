@@ -15,7 +15,7 @@ graphql_query = {
 }
 
 # Make the login request and extract the access token
-response = requests.post('https://apps.cloudhealthtech.com/graphql', json=login_query)
+response = requests.post('https://apps.cloudhealthtech.com/graphql', json=graphql_query)
 response.raise_for_status()
 data = response.json()
 ACCESSTOKEN = data['data']['loginAPI']['accessToken']
