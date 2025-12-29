@@ -2,6 +2,7 @@
 CloudHealth FlexReports Backup Script
 
 Author: Dean Tabor - CloudHealth Professional Services (dean.tabor@arrow.com)
+AI: Claude Code 
 
 This script authenticates to the CloudHealth API, retrieves all FlexReports across
 all available datasets, downloads each report as JSON, and packages them into a
@@ -12,8 +13,8 @@ Requirements:
     - Valid CloudHealth API key
 
 Configuration (in order of priority):
-    1. Environment variable: Set CLOUDHEALTH_API_KEY (recommended for security)
-    2. Hardcoded: Set API_KEY variable below (less secure)
+    1. Environment variable: Set CLOUDHEALTH_API_KEY 
+    2. Hardcoded: Set API_KEY variable in the script
     3. Interactive: Script will prompt for API key at runtime
 
 Output:
