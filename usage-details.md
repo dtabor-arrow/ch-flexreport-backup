@@ -2,7 +2,7 @@
 
 The FlexReport backup script performs a simple API query to download the individual JSON files for all available FlexReports.  FlexReports are defined by the JSON files and contain all of the information about the report, including the SQL statement.
 
-The SQL statement is exactly what you would see when editing a FlexReport in CloudHealth.  With the downloaded JSON, you can simply copy/paste the SQL back in to CloudHealth to restore/recreate the original report.
+The SQL statement is exactly what you would see when editing a FlexReport in CloudHealth.  With the downloaded JSON, you can simply copy/paste the SQL back in to CloudHealth to restore/recreate the original report, or you can do this via API using the [restore](https://github.com.mcas.ms/dtabor-arrow/ch-flexreport-backup/blob/main/README-restore-flexreport.md) script.
 
 ## Example JSON
 
