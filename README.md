@@ -1,6 +1,6 @@
 # CloudHealth FlexReports Backups
 
-Automated backup utility for CloudHealth FlexReports. Downloads all reports across all datasets and packages them into a timestamped zip archive.
+Backup all CloudHealth FlexReports to a local zip archive.
 
 ## Overview
 
@@ -26,7 +26,7 @@ pip install requests
 
 The script supports three methods for providing your CloudHealth API key (in priority order):
 
-### 1. Environment Variable (Recommended)
+### 1. Environment Variable
 
 ```bash
 export CLOUDHEALTH_API_KEY="your-api-key-here"
@@ -104,7 +104,7 @@ FlexReportsBackup_2025_12_04_10_30_45.zip
 
 ### Report JSON Contents
 
-Each JSON file contains complete JSON and SQL blob that can be used to restore a FlexReport.  Copy/paste the blob in to the FlexReports editor.
+Each JSON file contains complete JSON and SQL blob that can be used to restore a FlexReport.  You can read more about report restoration [here](https://github.com.mcas.ms/dtabor-arrow/ch-flexreport-backup/blob/main/usage-details.md).
 
 ## Exit Codes
 
@@ -150,6 +150,3 @@ ls -t FlexReportsBackup_*.zip | tail -n +8 | xargs -r rm
 - The script skips empty datasets automatically
 - Report names are sanitized for safe filesystem usage
 - Temporary JSON files are created during download and removed after archiving
-- The zip archive uses compression to minimize file size
-- All HTTP requests include timeouts to prevent hanging
-
