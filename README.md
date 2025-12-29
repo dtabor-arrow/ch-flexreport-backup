@@ -1,5 +1,7 @@
 # CloudHealth FlexReports Backups
 
+[![AI Assisted](https://img.shields.io/badge/AI-Claude%20Code-AAAAAA.svg)](https://claude.ai/code)
+
 Backup all CloudHealth FlexReports to a local zip archive.
 
 ## Overview
